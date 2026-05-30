@@ -1,0 +1,16 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "wordpress-workers-tarpit-dashboard",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-05-01",
+  "d1_databases": [
+    {
+      "binding": "TARPIT_DB",
+      "database_name": "tarpit-logs",
+      "database_id": "<YOUR_D1_DATABASE_ID_HERE>"
+    }
+  ],
+  "observability": {
+    "enabled": true
+  }
+}

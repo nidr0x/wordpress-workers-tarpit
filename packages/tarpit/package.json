@@ -1,0 +1,40 @@
+{
+  "name": "wordpress-workers-tarpit",
+  "version": "2.0.0",
+  "description": "A bot trap for Cloudflare Workers that slows down and blocks malicious vulnerability scanners and bot crawlers using slow-drips, compression bombs, and fake pages.",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "schema.sql"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "cloudflare",
+    "workers",
+    "tarpit",
+    "security",
+    "honeypot",
+    "bot",
+    "rate-limit",
+    "wordpress"
+  ],
+  "author": "Antigravity",
+  "license": "MIT",
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20241218.0",
+    "typescript": "^5.3.3"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "name": "wordpress-workers-tarpit-dashboard",
+  "version": "2.0.0",
+  "description": "Analytics dashboard for the workers-tarpit bot trap.",
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20241218.0",
+    "typescript": "^5.3.3",
+    "wrangler": "^3.22.0"
+  }
+}

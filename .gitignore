@@ -1,0 +1,7 @@
+node_modules/
+.DS_Store
+*.log
+.dev.vars
+dist/
+# Optional: keep dist/ out if you build on prepublish, but we compile it on publish.
+# For simplicity, we will ignore node_modules and keep the source code clean.
